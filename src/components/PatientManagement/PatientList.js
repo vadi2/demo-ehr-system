@@ -13,12 +13,7 @@ function PatientList() {
   );
 
   const handleAddPatient = () => {
-    const germanFirstNames = ['Hans', 'Klaus', 'Dieter', 'Ursula', 'Helga', 'Ingrid', 'Wolfgang', 'Gerhard', 'Sabine', 'Monika'];
-    const germanLastNames = ['Müller', 'Schmidt', 'Schneider', 'Fischer', 'Weber', 'Meyer', 'Wagner', 'Becker', 'Schulz', 'Hoffmann'];
-
-    const randomFirstName = germanFirstNames[Math.floor(Math.random() * germanFirstNames.length)];
-    const randomLastName = germanLastNames[Math.floor(Math.random() * germanLastNames.length)];
-    const newPatient = { name: `${randomFirstName} ${randomLastName}`, dateOfBirth: '1990-01-01' };
+    const newPatient = { name: 'New Patient', dateOfBirth: '1990-01-01' };
     addPatient(newPatient);
   };
 
